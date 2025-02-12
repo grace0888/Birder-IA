@@ -2,7 +2,6 @@
 
 import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
 import { ColorModeProvider } from './color-mode'
-import { Provider } from "@/components/ui/provider"
 
 export function Provider(props) {
   return (
@@ -12,10 +11,3 @@ export function Provider(props) {
   )
 }
 
-function App({ Component, pageProps }) {
-  return (
-    <Provider>
-      <Component {...pageProps} />
-    </Provider>
-  )
-}
