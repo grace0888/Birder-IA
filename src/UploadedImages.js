@@ -20,7 +20,7 @@ function UploadedImages(){
                 </Flex>
             </Box>
             <Box minH="90vh" background="cyan.700" width="100%" color="white">
-                Enter images code here
+                Enter images code here!
             </Box>
         </Flex>
     )

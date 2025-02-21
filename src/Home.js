@@ -3,6 +3,7 @@ import { Box } from "@chakra-ui/react";
 import { Flex } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/react';
+import { Input } from '@chakra-ui/react';
 
 function Home(){
     return (
@@ -18,7 +19,28 @@ function Home(){
                 </Flex>
             </Box>
             <Box minH="90vh" background="cyan.700" width="100%" color="white">
-                Enter search bar code here
+                <Flex minH="80vh" w="100" align="center" justify="center">
+                    <Flex direction="column" align="center" gap="10">
+                        <Input
+                            placeholder = "Enter a city"
+                            variant="filled"
+                            bg="white"
+                            htmlSize={80}
+                            color="black"
+                            width="auto"
+                            size="lg"
+                        />
+                        <Input
+                            placeholder = "Enter a species"
+                            variant="filled"
+                            bg="white"
+                            htmlSize={80}
+                            color="black"
+                            width="auto"
+                            size="lg"
+                        />
+                    </Flex>
+                </Flex>
             </Box>
         </Flex>
     )
