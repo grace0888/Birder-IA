@@ -3,6 +3,9 @@ import { Box } from "@chakra-ui/react";
 import { Flex } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
+import { FileUploadList, FileUploadRoot, FileUploadTrigger } from './components/ui/file-upload';
+import { HiUpload } from 'react-icons/hi'
 
 function UploadedImages(){
     return (
@@ -20,7 +23,14 @@ function UploadedImages(){
                 </Flex>
             </Box>
             <Box minH="90vh" background="cyan.700" width="100%" color="white">
-                Enter images code here!
+                <FileUploadRoot accept={["image/png"]}>
+                    <FileUploadTrigger asChild>
+                        <Button variant="outline" size="sm">
+                            <HiUpload /> Upload file
+                        </Button>
+                    </FileUploadTrigger>
+                    <FileUploadList />
+                </FileUploadRoot>
             </Box>
         </Flex>
     )
