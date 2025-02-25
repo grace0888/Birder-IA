@@ -6,6 +6,7 @@ import { Link } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/react';
 import { FileUploadList, FileUploadRoot, FileUploadTrigger } from './components/ui/file-upload';
 import { HiUpload } from 'react-icons/hi'
+import { Switch } from '@chakra-ui/react';
 
 function UploadedImages(){
     return (
@@ -23,14 +24,23 @@ function UploadedImages(){
                 </Flex>
             </Box>
             <Box minH="90vh" background="cyan.700" width="100%" color="white">
-                <FileUploadRoot accept={["image/png"]}>
-                    <FileUploadTrigger asChild>
-                        <Button variant="outline" size="sm">
-                            <HiUpload /> Upload file
-                        </Button>
-                    </FileUploadTrigger>
-                    <FileUploadList />
-                </FileUploadRoot>
+                <Flex margin="5" direction="row" justify="space-between" align="center">
+                    <FileUploadRoot accept={["image/png"]}>
+                        <FileUploadTrigger asChild>
+                            <Button colorPalette="cyan" variant="subtle" size="lg">
+                                <HiUpload /> Upload file
+                            </Button>
+                        </FileUploadTrigger>
+                        <FileUploadList />
+                    </FileUploadRoot>
+                    <Switch.Root size="lg" colorPalette="gray">
+                        <Switch.HiddenInput />
+                            <Switch.Control>
+                                <Switch.Thumb/>
+                            </Switch.Control>
+                        <Switch.Label textStyle="md">Delete</Switch.Label>
+                    </Switch.Root>
+                </Flex>
             </Box>
         </Flex>
     )
