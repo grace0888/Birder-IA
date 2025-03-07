@@ -28,51 +28,6 @@ export const birdsData = [
     },
     {
         id: 4,
-        name: "Ruddy Duck",
-        scientificName: "Oxyura jamaicensis",
-        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/302124271-720px.jpg", // need a list of image URLs
-        habitat: "These ducks can be found in rivers, lakes, and wetlands. They are found in North America.",
-        migration: "Breeding months are spent in Western Canada while winters are spent in Southern United States and Mexico. However some Ruddy Ducks in the Caribbean and South America don't migrate. When migration occurs, it happens mostly at night in small flocks.",
-        behavior: "These birds reside in shallow waters and spend most of their life in water. They sleep while floating.",
-    },
-    {
-        id: 5,
-        name: "Harlequin Duck",
-        scientificName: "Histrionicus histrionicus",
-        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/63898051-480px.jpg", // need a list of image URLs
-        habitat: "",
-        migration: "",
-        behavior: "",
-    },
-    {
-        id: 6,
-        name: "Fulvous Whistling Duck",
-        scientificName: "Dendrocygna bicolor",
-        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/302323931-480px.jpg", // need a list of image URLs
-        habitat: "",
-        migration: "",
-        behavior: "",
-    },
-    {
-        id: 7,
-        name: "Muscovy Duck",
-        scientificName: "Cairina moschata",
-        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/299692021-1280px.jpg", // need a list of image URLs
-        habitat: "",
-        migration: "",
-        behavior: "",
-    },
-    {
-        id: 8,
-        name: "Long-tailed Duck",
-        scientificName: "Clangula hyemalis",
-        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/63902971-240px.jpg", // need a list of image URLs
-        habitat: "",
-        migration: "",
-        behavior: "",
-    },
-    {
-        id: 9,
         name: "Orange-crowned Warbler",
         scientificName: "Leiothlypis celata",
         displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/296785521/1800", // need a list of image URLs
@@ -81,7 +36,7 @@ export const birdsData = [
         behavior: "",
     },
     {
-        id: 10,
+        id: 5,
         name: "White-winged Dove",
         scientificName: "Zenaida asiatica",
         displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/308431191/1800", // need a list of image URLs
@@ -90,7 +45,7 @@ export const birdsData = [
         behavior: "",
     },
     {
-        id: 11,
+        id: 6,
         name: "Hermit Thrush",
         scientificName: "Catharus guttatus",
         displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/303450651/1800", // need a list of image URLs
@@ -99,7 +54,7 @@ export const birdsData = [
         behavior: "",
     },
     {
-        id: 12,
+        id: 7,
         name: "White-crowned Sparrow",
         scientificName: "Zonotrichia leucophrys",
         displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/64978031/1800", // need a list of image URLs
@@ -108,10 +63,118 @@ export const birdsData = [
         behavior: "",
     },
     {
-        id: 13,
+        id: 8,
         name: "Yellow-bellied Sapsucker",
         scientificName: "Sphyrapicus varius",
         displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/297655981/1800", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 9,
+        name: "Great Egret",
+        scientificName: "Ardea alba",
+        displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/70610211/1800", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 10,
+        name: "Turkey Vulture",
+        scientificName: "Cathartes aura",
+        displayImage: "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/60317221/480", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 11,
+        name: "Ruddy Duck",
+        scientificName: "Oxyura jamaicensis",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/302124271-720px.jpg", // need a list of image URLs
+        habitat: "These ducks can be found in rivers, lakes, and wetlands. They are found in North America.",
+        migration: "Breeding months are spent in Western Canada while winters are spent in Southern United States and Mexico. However some Ruddy Ducks in the Caribbean and South America don't migrate. When migration occurs, it happens mostly at night in small flocks.",
+        behavior: "These birds reside in shallow waters and spend most of their life in water. They sleep while floating.",
+    },
+    {
+        id: 12,
+        name: "Harlequin Duck",
+        scientificName: "Histrionicus histrionicus",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/63898051-480px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 13,
+        name: "Fulvous Whistling Duck",
+        scientificName: "Dendrocygna bicolor",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/302323931-480px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 14,
+        name: "Muscovy Duck",
+        scientificName: "Cairina moschata",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/299692021-1280px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 15,
+        name: "Long-tailed Duck",
+        scientificName: "Clangula hyemalis",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/63902971-240px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 16,
+        name: "Ring-necked Duck",
+        scientificName: "Aythya collaris",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/301536921-480px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 17,
+        name: "Tufted Duck",
+        scientificName: "Aythya fuligula",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/301541481-1280px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 18,
+        name: "Wood Duck",
+        scientificName: "Aix sponsa",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/65533521-1280px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 19,
+        name: "Mexican Duck",
+        scientificName: "Anas diazi",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/111578741-1280px.jpg", // need a list of image URLs
+        habitat: "",
+        migration: "",
+        behavior: "",
+    },
+    {
+        id: 20,
+        name: "Common Eider",
+        scientificName: "Somateria mollissima",
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/301589811-1280px.jpg", // need a list of image URLs
         habitat: "",
         migration: "",
         behavior: "",
