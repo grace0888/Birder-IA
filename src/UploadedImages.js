@@ -1,16 +1,12 @@
 import React from 'react';
 import { useState } from "react";
-import { IconButton, Image, VStack, HStack, Spacer } from "@chakra-ui/react";
-import { MdFileUpload, MdDelete } from "react-icons/md";
+import { Image, VStack, HStack, Spacer } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 import { Flex } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/react';
-import { FileUploadList, FileUploadRoot, FileUploadTrigger } from './components/ui/file-upload';
-import { HiUpload } from 'react-icons/hi'
-import { Switch } from '@chakra-ui/react';
 
 function UploadedImages(){
     const [images, setImages] = useState([]);
@@ -49,13 +45,11 @@ function UploadedImages(){
                 </Flex>
             </Box>
             <VStack w="100vw" h="100vh" bg="cyan.700" align="start" spacing={4} p={4}>
-                <Flex gap = "5" direction="row" justify="space-between" align="center">
-                    <IconButton icon={<HiUpload />} onClick={() => document.getElementById("fileInput").click()} aria-label="Upload" />
-                    <Flex gap={6}>
-                        <IconButton icon={<MdDelete />} colorScheme={deleteMode ? "red" : "gray"} onClick={handleDeleteToggle} aria-label="Delete Mode" />
-                    </Flex>
+                <HStack justify="space-between" w="100%">
+                    <Button bg="white" color="black" onClick={() => document.getElementById("fileInput").click()}>Upload Image</Button>
+                    <Button bg="white" color="black" onClick={handleDeleteToggle}>{deleteMode ? "Cancel Delete Mode" : "Enable Delete Mode"}</Button>
                     <input id="fileInput" type="file" accept="image/jpeg" hidden onChange={handleImageUpload} />
-                </Flex>
+                </HStack>
 
                 <Box w="full" p={4} overflowY="auto" flex="1">
                     <Box display="grid" gridTemplateColumns="repeat(auto-fill, minmax(150px, 1fr))" gap={4} justifyContent="center">

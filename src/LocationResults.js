@@ -8,38 +8,6 @@ import { InputGroup } from "./components/ui/input-group"
 import { LuSearch } from "react-icons/lu"
 
 function LocationResults(){
-    /* error handling */
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
-    
-    // Handle the search logic
-    const handleSearch = () => {
-        setLoading(true);
-        setError(null);
-
-        if (!searchTerm.trim()) {
-            setFilteredBirds([]);
-            setLoading(false);
-            return;
-        }
-
-        try {
-            const results = birdsData.filter(bird => 
-                bird.name.toLowerCase().includes(searchTerm.toLowerCase())
-            );
-
-            if (results.length === 0) {
-                setError('No birds found for your search.');
-            } else {
-                setFilteredBirds(results);
-            }
-        } catch (error) {
-            setError('An error occurred while searching. Please try again later.');
-        } finally {
-            setLoading(false);
-            }
-    };
-    /* error handling */
     return (
        <Flex direction="column">
             <Box minH="10vh" background="bg" p={5} width="100%" color="black">
