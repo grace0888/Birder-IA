@@ -3,7 +3,7 @@ export const birdsData = [
         id: 1,
         name: "Northern Harrier",
         scientificName: "Circus hudsonius",
-        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/64805151-480px.jpg", // need a list of image URLs, not just one
+        displayImage: "https://www.allaboutbirds.org/guide/assets/photo/305648981-480px.jpg", // need a list of image URLs, not just one
         habitat: "The Northern Harrier typically is found in open areas such as grasslands, marshes, and croplands. They prefer westlands with tall, native, dense vegetation as well as lightly grazed pastures. They have been observed breeding from Alaska to Mexico.",
         migration: "Winters are spent in Central America and northern South America, and warmer months are spent more northward. They migrate alone during the daytime.",
         behavior: "These birds are low flyers and tend to glide. They circle areas to search for prey, and nest in hidden spots on the ground.",

@@ -1,4 +1,8 @@
 import React from 'react';
+import { useState } from "react";
+import { IconButton, Image, VStack, HStack, Spacer } from "@chakra-ui/react";
+import { MdFileUpload, MdDelete } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 import { Flex } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
@@ -9,6 +13,27 @@ import { HiUpload } from 'react-icons/hi'
 import { Switch } from '@chakra-ui/react';
 
 function UploadedImages(){
+    const [images, setImages] = useState([]);
+    const [deleteMode, setDeleteMode] = useState(false);
+    const navigate = useNavigate();
+
+    const handleImageUpload = (event) => {
+        const file = event.target.files[0];
+        if (file && file.type.startsWith("image/jpeg")) {
+        const imageUrl = URL.createObjectURL(file);
+        setImages([...images, imageUrl]);
+        }
+    };
+
+    const handleDeleteToggle = () => {
+        setDeleteMode(!deleteMode);
+    };
+
+    const handleDeleteImage = (index) => {
+        if (!deleteMode) return;
+        setImages(images.filter((_, i) => i !== index));
+    };
+
     return (
         <Flex direction="column">
             <Box minH="10vh" background="bg" p={5} width="100%" color="black">
@@ -23,25 +48,23 @@ function UploadedImages(){
                     </Flex>
                 </Flex>
             </Box>
-            <Box minH="90vh" background="cyan.700" width="100%" color="white">
-                <Flex margin="5" direction="row" justify="space-between" align="center">
-                    <FileUploadRoot accept={["image/png"]}>
-                        <FileUploadTrigger asChild>
-                            <Button colorPalette="cyan" variant="subtle" size="lg">
-                                <HiUpload /> Upload file
-                            </Button>
-                        </FileUploadTrigger>
-                        <FileUploadList />
-                    </FileUploadRoot>
-                    <Switch.Root size="lg" colorPalette="gray">
-                        <Switch.HiddenInput />
-                            <Switch.Control>
-                                <Switch.Thumb/>
-                            </Switch.Control>
-                        <Switch.Label textStyle="md">Delete</Switch.Label>
-                    </Switch.Root>
+            <VStack w="100vw" h="100vh" bg="cyan.700" align="start" spacing={4} p={4}>
+                <Flex gap = "5" direction="row" justify="space-between" align="center">
+                    <IconButton icon={<HiUpload />} onClick={() => document.getElementById("fileInput").click()} aria-label="Upload" />
+                    <Flex gap={6}>
+                        <IconButton icon={<MdDelete />} colorScheme={deleteMode ? "red" : "gray"} onClick={handleDeleteToggle} aria-label="Delete Mode" />
+                    </Flex>
+                    <input id="fileInput" type="file" accept="image/jpeg" hidden onChange={handleImageUpload} />
                 </Flex>
-            </Box>
+
+                <Box w="full" p={4} overflowY="auto" flex="1">
+                    <Box display="grid" gridTemplateColumns="repeat(auto-fill, minmax(150px, 1fr))" gap={4} justifyContent="center">
+                        {images.map((img, index) => (
+                        <Image key={index} src={img} boxSize="150px" objectFit="cover" borderRadius="md" boxShadow="md" onClick={() => handleDeleteImage(index)} cursor={deleteMode ? "pointer" : "default"} />
+                        ))}
+                    </Box>
+                </Box>
+            </VStack>
         </Flex>
     )
 }
