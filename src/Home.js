@@ -11,6 +11,22 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 function Home(){
+    const [city, setCity] = useState("");
+    const [species, setSpecies] = useState("");
+    const navigate = useNavigate();
+  
+    const handleKeyPressLocation = (event) => {
+      if (event.key === "Enter") {
+        navigate("/location-results", { state: { city } });
+      }
+    };
+
+    const handleKeyPressSpecies = (event) => {
+        if (event.key === "Shift") {
+          navigate("/species-results", { state: { species } });
+        }
+      };
+
     return (
         <Flex direction="column">
             <Box minH="10vh" background="bg" p={5} width="100%" color="black">
@@ -39,6 +55,9 @@ function Home(){
                                     color="black"
                                     width="auto"
                                     size="lg"
+                                    value={city}
+                                    onChange={(e) => setCity(e.target.value)}
+                                    onKeyDown={handleKeyPressLocation}
                                 />
                             </InputGroup>
                         </HStack>
@@ -55,6 +74,9 @@ function Home(){
                                     color="black"
                                     width="auto"
                                     size="lg"
+                                    value={species}
+                                    onChange={(e) => setSpecies(e.target.value)}
+                                    onKeyDown={handleKeyPressSpecies}
                                 />
                             </InputGroup>
                         </HStack>

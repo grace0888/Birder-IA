@@ -7,6 +7,7 @@ export const birdsData = [
         habitat: "The Northern Harrier typically is found in open areas such as grasslands, marshes, and croplands. They prefer westlands with tall, native, dense vegetation as well as lightly grazed pastures. They have been observed breeding from Alaska to Mexico.",
         migration: "Winters are spent in Central America and northern South America, and warmer months are spent more northward. They migrate alone during the daytime.",
         behavior: "These birds are low flyers and tend to glide. They circle areas to search for prey, and nest in hidden spots on the ground.",
+        location: "Austin, Texas"
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const birdsData = [
         habitat: "These birds are found in forests, fields, and the suburbs and are mainly found in North America.",
         migration: "Semi-open areas are preferred during winter, where they can be found in western United States such as California and Arizona. During breeding season, Pine Siskins are found in the northern part of the continent.",
         behavior: "Pine siskins are foragers and look for seeds in the topmost canopies of trees. They can sometimes be found upside down on small branches, searching through cones.",
+        location: "Austin, Texas"
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const birdsData = [
         habitat: "Cedar Waxwings can be found in a variety of environments, including orchards, farms, the suburbs, and woodlands. They are typically seen in southern United States and have been observed down to Colombia.",
         migration: "Winters are spent in southern United States and northern South America. During breeding season, these birds travel into northern United States. They migrate in flocks at night.",
         behavior: "It's common to see Cedar Waxwings in flocks as they are very social animals. They feed on berries and hunt water insects.",
+        location: "Austin, Texas"
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 5,
@@ -43,6 +47,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 6,
@@ -52,6 +57,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 7,
@@ -61,6 +67,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 8,
@@ -70,6 +77,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 9,
@@ -79,6 +87,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 10,
@@ -88,6 +97,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: "Austin, Texas"
     },
     {
         id: 11,
@@ -97,6 +107,7 @@ export const birdsData = [
         habitat: "These ducks can be found in rivers, lakes, and wetlands. They are found in North America.",
         migration: "Breeding months are spent in Western Canada while winters are spent in Southern United States and Mexico. However some Ruddy Ducks in the Caribbean and South America don't migrate. When migration occurs, it happens mostly at night in small flocks.",
         behavior: "These birds reside in shallow waters and spend most of their life in water. They sleep while floating.",
+        location: ""
     },
     {
         id: 12,
@@ -106,6 +117,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 13,
@@ -115,6 +127,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 14,
@@ -124,6 +137,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 15,
@@ -133,6 +147,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 16,
@@ -142,6 +157,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 17,
@@ -151,6 +167,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 18,
@@ -160,6 +177,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 19,
@@ -169,6 +187,7 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     },
     {
         id: 20,
@@ -178,5 +197,6 @@ export const birdsData = [
         habitat: "",
         migration: "",
         behavior: "",
+        location: ""
     }
 ];
