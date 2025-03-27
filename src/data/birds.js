@@ -107,6 +107,10 @@ export const birdsData = [
         habitat: "These ducks can be found in rivers, lakes, and wetlands. They are found in North America.",
         migration: "Breeding months are spent in Western Canada while winters are spent in Southern United States and Mexico. However some Ruddy Ducks in the Caribbean and South America don't migrate. When migration occurs, it happens mostly at night in small flocks.",
         behavior: "These birds reside in shallow waters and spend most of their life in water. They sleep while floating.",
+        image1: "https://www.allaboutbirds.org/guide/assets/photo/161973051-480px.jpg",
+        image2: "https://preview.redd.it/ruddy-duck-i-think-theyre-so-cute-v0-gv8q05bvvsz91.png?auto=webp&s=f5f96222da8a578d200249e2881ca112b5eaa146",
+        image3: "https://www.fws.gov/sites/default/files/2022-02/ruddy%20duck%20Allan%20Hack%20CC.jpg",
+        image4: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAwjd0Kzj2OaZlbxseX8ghc0qHWO6UX5am_OSzr7-_B13AlKqfCjGL93mvL7La33JbnvRtWfFzXhDHJoXdOBb7lp5TYTnkyOJWxbm-OokrukvJopqVLpd98nwxfxZ1VE__AU84oqz-lLNZ/s1600/Ruddy+Duck+02+-+Paul+Higgins.jpg",
         location: ""
     },
     {
